@@ -6,8 +6,58 @@
         xmlns:local="clr-namespace:CareService"
         mc:Ignorable="d"
         Title="Центр социального обслуживания" Height="450" Width="800"
-        WindowStartupLocation="CenterOwner">
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Loaded="Window_Loaded">
+
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="64"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="212"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Рамки (обводка)-->
+        <Border BorderBrush="Gray" BorderThickness="0,0,0,1" Grid.ColumnSpan="2"/>
+        <Border BorderBrush="Gray" BorderThickness="0,0,1,0" Grid.RowSpan="2"/>
+        <Border BorderBrush="Gray" Grid.Column="2" Grid.Row="1"/>
+
+        <!--Логотип-->
+        <Image Margin="1" Source="https://i.imgur.com/vTqq9cG.png"/>
+
+        <!--Колонтитул-->
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="215"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Content="{Binding Content.Title, ElementName=frame}" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="24" FontFamily="Roboto" Margin="10,0,0,0" Padding="0,5,5,5" />
+        </Grid>
+
+        <!--Навигация-->
+        <StackPanel Grid.Row="1">
+            <StackPanel.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="FontFamily" Value="Roboto"/>
+                    <Setter Property="FontSize" Value="14px"/>
+                    <Setter Property="Margin" Value="1,0,1,1"/>
+                    <Setter Property="Height" Value="30"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                </Style>
+            </StackPanel.Resources>
+
+            <Button Content="Задачи"/>
+            <Button Content="Клиенты"/>
+            <Button Content="Управление"/>
+            <Button Content="Отчёты"/>
+        </StackPanel>
+
+        <Frame x:Name="Frame" x:FieldModifier="public" Grid.Row="1" Grid.Column="1" Padding="5" Source="/Views/TaskList.xaml" NavigationUIVisibility="Hidden"/>
 
     </Grid>
 </Window>

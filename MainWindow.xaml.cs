@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CareService.Models.Entity;
 
 namespace CareService
 {
@@ -23,6 +24,24 @@ namespace CareService
         public MainWindow()
         {
             InitializeComponent();
+
+            PageManager.Frame = Frame;
         }
-    }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            using (ApplicationContext db = new ApplicationContext())
+            {
+                //db.Tasks.Add(new Models.Task() { Name = "задача намбэр ту", Description = "нет." });
+                try
+                {
+                    db.SaveChanges();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+}
 }
