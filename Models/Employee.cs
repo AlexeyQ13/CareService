@@ -10,6 +10,7 @@ namespace CareService.Models
     public class Employee : Person
     {
         public string Login { get; set; }
-        public string? Role { get; set; }
+        public string Password { get; set; }
+        public Role? Role { get; set; }
     }
 }

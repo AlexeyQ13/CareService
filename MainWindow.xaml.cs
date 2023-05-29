@@ -35,12 +35,15 @@ namespace CareService
                 //db.Tasks.Add(new Models.Task() { Name = "задача намбэр ту", Description = "нет." });
                 try
                 {
+                    db.Employees.Add(new Models.Employee() { FirstName = "Алексей", LastName = "Горшков", Login = "admin", Password = "admin" });
                     db.SaveChanges();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
+
+
             }
         }
 }

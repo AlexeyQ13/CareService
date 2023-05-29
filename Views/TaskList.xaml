@@ -8,12 +8,12 @@
       xmlns:Models="clr-namespace:CareService.Models" x:Class="CareService.Views.TaskList"
       mc:Ignorable="d" d:DesignWidth="800"
       Title="Список задач"
-      d:Background="White" Height="983">
+      d:Background="White" Height="Auto">
 
     <Page.Resources>
+        <local:PersonNameConverter x:Key="PersonNameConverter"/>
         <DataTemplate x:Key="TaskTemplate">
             <Grid Height="64">
-
                 <Grid.Resources>
                     <Style TargetType="{x:Type TextBlock}">
                         <Setter Property="Margin" Value="0"/>
@@ -31,9 +31,9 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBlock Text="{Binding Name}"/>
-                <TextBlock Text="{Binding Status}" Grid.Column="1"/>
+                <TextBlock Text="{Binding StatusID}" Grid.Column="1"/>
                 <TextBlock Text="{Binding Deadline}" Grid.Column="2"/>
-                <TextBlock Text="{Binding Manager}" Grid.Column="3"/>
+                <TextBlock x:Name="Manager_Label" Text="{Binding ManagerID, Converter={StaticResource PersonNameConverter}}" Grid.Column="3"/>
                 <Button Content="Изменить" Grid.Column="4" MaxHeight="30" Click="ViewTaskBtn_Click"/>
             </Grid>
         </DataTemplate>
@@ -45,6 +45,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
 
         <Grid>
@@ -88,5 +89,7 @@
                 <StaticResource ResourceKey="TaskTemplate"/>
             </ListBox.ItemTemplate>
         </ListBox>
+
+        <Button Grid.Row="2" Margin="2" Content="Создать" Click="CreateBtn_Click"/>
     </Grid>
 </Page>

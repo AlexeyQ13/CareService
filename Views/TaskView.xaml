@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       d:Background="White"
-      Title="Просмотр задачи">
+      Title="Просмотр задачи: ">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -19,6 +19,8 @@
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="70"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
@@ -37,18 +39,22 @@
         </Grid.Resources>
 
         <Label Grid.Row="0" Content="Название задачи" Padding="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="4,0,0,4"/>
-        <TextBox Grid.Row="1" Text="{Binding Name}"/>
+        <TextBox x:Name="TaskName" Grid.Row="1" Text="{Binding Name}"/>
 
         <Label Grid.Row="2" Content="Описание" Padding="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="4,0,0,4"/>
         <TextBox Grid.Row="3" Text="{Binding Description}" VerticalAlignment="Center" Height="70"/>
-
-        <Label Grid.Row="4" Content="Ответственный" Padding="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="4,0,0,4"/>
-        <TextBox Grid.Row="5" Text="{Binding Manager}"/>
+        
+        <Label Grid.Row="4" Content="Стадия" Padding="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="4,0,0,4"/>
+        <!--<TextBox Grid.Row="5" Text="{Binding Status}"/>-->
+        <ComboBox x:Name="ComboStatus" SelectedValue="{Binding StatusID}" DisplayMemberPath="Name" SelectedValuePath="Id" Grid.Row="5"/>
 
         <Label Grid.Row="6" Content="Крайний срок" Padding="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="4,0,0,4"/>
         <DatePicker Grid.Row="7" Text="{Binding Deadline}" SelectedDateFormat="Short"/>
 
-        <Grid Grid.Row="10">
+        <Label Grid.Row="8" Content="Ответственный" Padding="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="4,0,0,4"/>
+        <ComboBox x:Name="ComboManager" Grid.Row="9" SelectedValue="{Binding ManagerID}" SelectedValuePath="Id"/>
+
+        <Grid Grid.Row="12">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="*"/>

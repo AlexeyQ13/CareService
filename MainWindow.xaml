@@ -36,7 +36,7 @@
                 <ColumnDefinition Width="215"/>
             </Grid.ColumnDefinitions>
 
-            <Label Content="{Binding Content.Title, ElementName=frame}" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="24" FontFamily="Roboto" Margin="10,0,0,0" Padding="0,5,5,5" />
+            <Label Content="{Binding Content.Title, ElementName=Frame}" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="24" FontFamily="Roboto" Margin="10,0,0,0" Padding="0,5,5,5" />
         </Grid>
 
         <!--Навигация-->
@@ -57,7 +57,7 @@
             <Button Content="Отчёты"/>
         </StackPanel>
 
-        <Frame x:Name="Frame" x:FieldModifier="public" Grid.Row="1" Grid.Column="1" Padding="5" Source="/Views/TaskList.xaml" NavigationUIVisibility="Hidden"/>
+        <Frame x:Name="Frame" x:FieldModifier="public" Grid.Row="1" Grid.Column="1" Padding="2" Source="/Views/TaskList.xaml" NavigationUIVisibility="Hidden"/>
 
     </Grid>
 </Window>

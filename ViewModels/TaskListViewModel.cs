@@ -19,6 +19,9 @@ namespace CareService.ViewModels
         private List<Models.Task> _taskList = new();
         public List<Models.Task> Tasks { get => _taskList; set => SetProperty(ref _taskList, value); }
 
+        private List<Models.Employee> _employees = new();
+        public List<Models.Employee> Employees { get => _employees; set => SetProperty(ref _employees, value); }
+
         public TaskListViewModel() 
         {
             try
@@ -26,6 +29,9 @@ namespace CareService.ViewModels
                 using (ApplicationContext db  = new ApplicationContext())
                 {
                     _taskList = db.Tasks.ToList();
+                    _employees = db.Employees.ToList();
+
+
                 }
             }
             catch 

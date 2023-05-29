@@ -30,5 +30,10 @@ namespace CareService.Views
         {
             PageManager.Frame.Navigate(new TaskView((sender as Button).DataContext as Models.Task));
         }
+
+        private void CreateBtn_Click(object sender, RoutedEventArgs e)
+        {
+            PageManager.Frame.Navigate(new TaskView(null));
+        }
     }
 }
