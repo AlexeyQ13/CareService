@@ -51,9 +51,9 @@
                 </Style>
             </StackPanel.Resources>
 
-            <Button Content="Задачи"/>
-            <Button Content="Клиенты"/>
-            <Button Content="Управление"/>
+            <Button Content="Задачи" Click="TasksBtn_Click"/>
+            <Button Content="Клиенты" Click="CustomersBtn_Click"/>
+            <Button Content="Управление" Click="EmployeersBtn_Click"/>
             <Button Content="Отчёты"/>
         </StackPanel>
 

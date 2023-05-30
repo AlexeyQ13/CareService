@@ -35,7 +35,7 @@ namespace CareService
                 //db.Tasks.Add(new Models.Task() { Name = "задача намбэр ту", Description = "нет." });
                 try
                 {
-                    db.Employees.Add(new Models.Employee() { FirstName = "Алексей", LastName = "Горшков", Login = "admin", Password = "admin" });
+                    //db.Employees.Add(new Models.Employee() { FirstName = "Алексей", LastName = "Горшков", Login = "admin", Password = "admin" });
                     db.SaveChanges();
                 }
                 catch (Exception ex)
@@ -46,5 +46,20 @@ namespace CareService
 
             }
         }
-}
+
+        private void TasksBtn_Click(object sender, RoutedEventArgs e)
+        {
+            PageManager.Frame.Navigate(new Views.TaskList());
+        }
+
+        private void CustomersBtn_Click(object sender, RoutedEventArgs e)
+        {
+            PageManager.Frame.Navigate(new Views.CustomerList());
+        }
+
+        private void EmployeersBtn_Click(object sender, RoutedEventArgs e)
+        {
+            PageManager.Frame.Navigate(new Views.EmployeeList());
+        }
+    }
 }
