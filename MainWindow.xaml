@@ -37,6 +37,18 @@
             </Grid.ColumnDefinitions>
 
             <Label Content="{Binding Content.Title, ElementName=Frame}" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="24" FontFamily="Roboto" Margin="10,0,0,0" Padding="0,5,5,5" />
+
+            <Grid Grid.Column="2" x:Name="SessionInfo">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="1" Content="{Binding FirstName}" d:Content="FirstName" Padding="0" VerticalAlignment="Center"/>
+                <Label Grid.Row="2" Content="{Binding LastName}" d:Content="LastName" Padding="0" VerticalAlignment="Center"/>
+            </Grid>
         </Grid>
 
         <!--Навигация-->
@@ -45,7 +57,7 @@
                 <Style TargetType="Button">
                     <Setter Property="FontFamily" Value="Roboto"/>
                     <Setter Property="FontSize" Value="14px"/>
-                    <Setter Property="Margin" Value="1,0,1,1"/>
+                    <Setter Property="Margin" Value="1,0,1,0"/>
                     <Setter Property="Height" Value="30"/>
                     <Setter Property="BorderThickness" Value="0"/>
                 </Style>
@@ -54,7 +66,6 @@
             <Button Content="Задачи" Click="TasksBtn_Click"/>
             <Button Content="Клиенты" Click="CustomersBtn_Click"/>
             <Button Content="Управление" Click="EmployeersBtn_Click"/>
-            <Button Content="Отчёты"/>
         </StackPanel>
 
         <Frame x:Name="Frame" x:FieldModifier="public" Grid.Row="1" Grid.Column="1" Padding="2" Source="/Views/TaskList.xaml" NavigationUIVisibility="Hidden"/>

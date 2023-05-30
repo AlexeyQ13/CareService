@@ -25,6 +25,7 @@ namespace CareService
         {
             InitializeComponent();
 
+            SessionInfo.DataContext = CareService.Session.User;
             PageManager.Frame = Frame;
         }
 

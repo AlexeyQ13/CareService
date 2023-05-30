@@ -1,0 +1,36 @@
+﻿<Window x:Class="CareService.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CareService"
+        mc:Ignorable="d"
+        Title="Центр социального обслуживания" Height="900" Width="1440"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="648"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="19"/>
+            <RowDefinition Height="43"/>
+            <RowDefinition Height="43"/>
+            <RowDefinition Height="19"/>
+            <RowDefinition Height="43"/>
+            <RowDefinition Height="43"/>
+            <RowDefinition Height="43"/>
+            <RowDefinition Height="43"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid/>
+        <Label Grid.Column="1" Content="Логин" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="1" Width="Auto" Height="Auto" Padding="0"/>
+        <TextBox x:Name="LoginTextBox" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Width="Auto" MaxLines="1"/>
+        <Label Grid.Column="1" Content="Пароль" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="4" Width="Auto" Height="Auto" Padding="0"/>
+        <PasswordBox x:Name="PasswordTextBox" Grid.Column="1" Grid.Row="5" Width="Auto"/>
+        <Button Grid.Column="1" Content="Войти" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="7" Width="Auto" Height="Auto" Click="Login_Click"/>
+    </Grid>
+</Window>

@@ -36,19 +36,14 @@ namespace CareService.Views
             using (ApplicationContext db = new ApplicationContext())
             {
                 ComboRole.ItemsSource = db.Roles.ToList();
-                //ComboManager.ItemsSource = db.Employees.ToList();
 
                 var selectedRole = db.Roles.FirstOrDefault(e => e.Id == _employee.RoleID);
-                //var selectedStatus = db.TaskStatuses.FirstOrDefault(e => e.Id == _task.StatusID);
 
                 ComboRole.SelectedItem = selectedRole;
-                //ComboStatus.SelectedItem = selectedStatus;
 
                 if (_employee.RoleID != 0)
                     _employee.RoleID = db.Roles.FirstOrDefault(e => e.Id == _employee.RoleID).Id;
 
-                //if (_task.StatusID != null)
-                //    _task.StatusID = db.Employees.FirstOrDefault(e => e.Id == _task.StatusID).Id;
             }
         }
 
