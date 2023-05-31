@@ -1,101 +1,115 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="CareService.App">
-    <Position X="10.25" Y="0.5" Width="1.5" />
+    <Position X="7.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>App.xaml.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CareService.MainWindow" BaseTypeListCollapsed="true">
-    <Position X="15.5" Y="0.5" Width="1.5" />
+    <Position X="11.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAQAAAAAAAAAAA=</HashCode>
       <FileName>MainWindow.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CareService.PageManager">
-    <Position X="10.25" Y="3.25" Width="1.5" />
+    <Position X="13" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
       <FileName>PageManager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CareService.Models.Entity.ApplicationContext">
-    <Position X="12" Y="0.5" Width="1.5" />
+    <Position X="9.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAACgAAAAAAAAAIBAAAAAA=</HashCode>
+      <HashCode>AAEAAAAAAQAAAAAAAAAAAAAACgAAAAAAAAAIBAAAAAA=</HashCode>
       <FileName>Models\Entity\ApplicationContext.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CareService.Models.Customer">
-    <Position X="5" Y="4" Width="1.5" />
+    <Position X="5.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Customer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CareService.Models.Employee">
-    <Position X="2.75" Y="4" Width="1.5" />
+    <Position X="5.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAACAAAQAAAAAAA=</HashCode>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAACAAAQAAAAAAA=</HashCode>
       <FileName>Models\Employee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CareService.Models.Person">
-    <Position X="4" Y="0.5" Width="1.5" />
+    <Position X="3" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAEAAAAAAAAAEAAAQAAAAAAAIAAACAAAAIAAAAAg=</HashCode>
       <FileName>Models\Person.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CareService.Models.Role">
-    <Position X="13.75" Y="3.25" Width="1.5" />
+    <Position X="9.5" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Role.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CareService.Models.Task">
-    <Position X="10.25" Y="5.5" Width="1.5" />
+    <Position X="7.75" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAgAAAAAAAIAAQIAAAABAAAAAEAAAAAAAA=</HashCode>
       <FileName>Models\Task.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CareService.Models.TaskStatus">
-    <Position X="13.75" Y="5.5" Width="1.5" />
+    <Position X="11.25" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\TaskStatus.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CareService.ViewModels.TaskListViewModel">
-    <Position X="7.75" Y="3" Width="1.5" />
+    <Position X="0.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAIAAAAAAIAAAgAAA=</HashCode>
       <FileName>ViewModels\TaskListViewModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CareService.ViewModels.ViewModelBase">
-    <Position X="7.75" Y="0.5" Width="1.5" />
+    <Position X="3" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAEAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ViewModels\ViewModelBase.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="CareService.Views.CustomerList" BaseTypeListCollapsed="true">
-    <Position X="13.75" Y="0.5" Width="1.5" />
+  <Class Name="CareService.ViewModels.CustomerListViewModel">
+    <Position X="3" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>ViewModels\CustomerListViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CareService.ViewModels.EmployeeListViewModel">
+    <Position X="5.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>ViewModels\EmployeeListViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CareService.Views.CustomerList" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Views\CustomerList.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CareService.Views.PersonNameConverter" BaseTypeListCollapsed="true">
-    <Position X="12" Y="3.25" Width="1.5" />
+    <Position X="7.75" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Views\PersonNameConverter.cs</FileName>
@@ -103,7 +117,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CareService.Views.StatusNameConverter" BaseTypeListCollapsed="true">
-    <Position X="15.5" Y="3.25" Width="1.5" />
+    <Position X="13" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Views\StatusNameConverter.cs</FileName>
@@ -111,7 +125,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CareService.Views.TaskList" BaseTypeListCollapsed="true">
-    <Position X="12" Y="5.5" Width="1.5" />
+    <Position X="9.5" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
       <FileName>Views\TaskList.xaml.cs</FileName>
@@ -119,10 +133,42 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CareService.Views.TaskView" BaseTypeListCollapsed="true">
-    <Position X="15.5" Y="5.5" Width="1.5" />
+    <Position X="13" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAhAAIAIAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Views\TaskView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CareService.Views.CustomerView" BaseTypeListCollapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAIAQAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\CustomerView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CareService.Views.EmployeeList" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\EmployeeList.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CareService.Views.EmployeeView" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAIAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\EmployeeView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CareService.Views.RoleNameConverter" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\RoleNameConverter.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>

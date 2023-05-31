@@ -35,7 +35,6 @@ namespace CareService
 
                     if (authSession.Password != PasswordTextBox.Password) 
                     {
-                        MessageBox.Show(authSession.Password);
                         MessageBox.Show("Ошибка, указан неверный пароль");
                         return;
                     }
